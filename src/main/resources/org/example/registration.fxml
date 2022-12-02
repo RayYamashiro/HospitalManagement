@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #310062;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.RegController">
+    <children>
+        <AnchorPane layoutX="-41.0" layoutY="190.0" prefHeight="416.0" prefWidth="941.0" style="-fx-background-color: #eb8473;">
+            <children>
+                <TextField fx:id="reg_login_field" layoutX="110.0" layoutY="37.0" prefHeight="39.0" prefWidth="330.0" promptText="Email" style="-fx-background-color: #e9e9e9;" />
+                <TextField fx:id="reg_password_field" layoutX="535.0" layoutY="37.0" prefHeight="39.0" prefWidth="330.0" promptText="Пароль, минимум 6 символов" style="-fx-background-color: #e9e9e9;" />
+                <Button fx:id="reg_Button" layoutX="374.0" layoutY="311.0" mnemonicParsing="false" onAction="#regButtonAction" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #afeeee;" text="Зарегистрироваться">
+                    <font>
+                        <Font size="20.0" />
+                    </font></Button>
+            <TextField fx:id="name_login_field" layoutX="110.0" layoutY="108.0" prefHeight="39.0" prefWidth="330.0" promptText="Имя" style="-fx-background-color: #e9e9e9;" />
+            <TextField fx:id="surname_login_field" layoutX="535.0" layoutY="108.0" prefHeight="39.0" prefWidth="330.0" promptText="Фамилия" style="-fx-background-color: #e9e9e9;" />
+            <TextField fx:id="phone_login_field" layoutX="306.0" layoutY="182.0" prefHeight="39.0" prefWidth="330.0" promptText="Телефон, например 79201111111" style="-fx-background-color: #e9e9e9;" />
+            <RadioButton fx:id="male_login_radioBut" layoutX="353.0" layoutY="254.0" mnemonicParsing="false" text="Мужчина">
+               <toggleGroup>
+                  <ToggleGroup fx:id="humanSex" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="female_login_radioBut" layoutX="535.0" layoutY="254.0" mnemonicParsing="false" text="Женщина" toggleGroup="$humanSex" />
+            </children>
+        </AnchorPane>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="325.0" layoutY="71.0" prefHeight="72.0" prefWidth="250.0" text="HospitalManager" textFill="#bf5454">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

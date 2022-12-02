@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #310062;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.PrimaryController">
+   <children>
+      <AnchorPane layoutX="-41.0" layoutY="190.0" prefHeight="416.0" prefWidth="941.0" style="-fx-background-color: #eb8473;">
+         <children>
+            <TextField fx:id="login_field" layoutX="306.0" layoutY="106.0" prefHeight="39.0" prefWidth="330.0" promptText="Логин" style="-fx-background-color: #e9e9e9;" />
+            <Label layoutX="390.0" layoutY="22.0" text="Авторизация" textFill="#545050">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="authSignInButton" layoutX="420.0" layoutY="258.0" mnemonicParsing="false" onAction="#authButtonAction" prefHeight="52.0" prefWidth="102.0" style="-fx-background-color: #afeeee;" text="Войти">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <PasswordField fx:id="password_field" layoutX="306.0" layoutY="183.0" prefHeight="39.0" prefWidth="330.0" promptText="Пароль" style="-fx-background-color: #e9e9e9;" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="305.0" layoutY="72.0" prefHeight="72.0" prefWidth="250.0" text="HospitalManager" textFill="#bf5454">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginSignUpButton" layoutX="706.0" layoutY="24.0" mnemonicParsing="false" onAction="#initialize" prefHeight="39.0" prefWidth="168.0" style="-fx-background-color: #afeeee;" text="Регистрация">
+         <font>
+            <Font name="Bauhaus 93" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
