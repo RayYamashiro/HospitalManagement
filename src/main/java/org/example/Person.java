@@ -94,6 +94,6 @@ public class Person {
 
     public enum Sex
     {
-        Мужчина , Женщина;
+          Женщина, Мужчина;
     }
 }

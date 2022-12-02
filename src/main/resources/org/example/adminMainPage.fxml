@@ -13,6 +13,14 @@
                         <Font size="27.0" />
                     </font>
                 </Label>
+            <Button fx:id="add_doctor_admin" layoutX="80.0" layoutY="76.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="153.0" style="-fx-background-color: #afeeee;" text="Добавить врача">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="delete_doctor_admin" layoutX="80.0" layoutY="131.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="153.0" style="-fx-background-color: #afeeee;" text="Удалить врача">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
             </children>
         </AnchorPane>
         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="325.0" layoutY="71.0" prefHeight="72.0" prefWidth="250.0" text="HospitalManager" textFill="#bf5454">

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #310062;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.RegController">
+    <children>
+        <AnchorPane layoutX="-41.0" layoutY="190.0" prefHeight="416.0" prefWidth="941.0" style="-fx-background-color: #eb8473;">
+            <children>
+                <Button fx:id="reg_Button" layoutX="374.0" layoutY="311.0" mnemonicParsing="false" onAction="#regButtonAction" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #afeeee;" text="Добавить">
+                    <font>
+                        <Font size="20.0" />
+                    </font></Button>
+                <TextField fx:id="name_login_field" layoutX="110.0" layoutY="108.0" prefHeight="39.0" prefWidth="330.0" promptText="Имя" style="-fx-background-color: #e9e9e9;" />
+                <TextField fx:id="surname_login_field" layoutX="110.0" layoutY="37.0" prefHeight="39.0" prefWidth="330.0" promptText="Фамилия" style="-fx-background-color: #e9e9e9;" />
+                <TextField fx:id="phone_login_field" layoutX="110.0" layoutY="177.0" prefHeight="39.0" prefWidth="330.0" promptText="Телефон, например 79201111111" style="-fx-background-color: #e9e9e9;" />
+            <Pane layoutX="647.0" layoutY="37.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ComboBox layoutX="14.0" layoutY="20.0" prefWidth="150.0" promptText="Специализация" />
+               </children>
+            </Pane>
+            </children>
+        </AnchorPane>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="325.0" layoutY="71.0" prefHeight="72.0" prefWidth="250.0" text="HospitalManager" textFill="#bf5454">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

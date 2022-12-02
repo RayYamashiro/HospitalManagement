@@ -64,8 +64,8 @@ public class PrimaryController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
-            stage.showAndWait();
-
+            stage.show();
+            /*
             FXMLLoader loader1 = new FXMLLoader();
             loader1.setLocation(getClass().getResource("startpage.fxml"));
             try {
@@ -77,8 +77,13 @@ public class PrimaryController {
             Stage stage1 = new Stage();
             stage1.setScene(new Scene(root1));
             stage1.showAndWait();
+
+             */
         });
+
+
     }
+
 
     @FXML
     private void authButtonAction()
