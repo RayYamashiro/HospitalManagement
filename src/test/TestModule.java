@@ -31,11 +31,7 @@ public class TestModule {
         sessionFactory = HibernateUtil.getSessionFactory();
         System.out.println("SessionFactory created");
     }
-    @Test
-    public void gg()
-    {
 
-    }
 
     @AfterAll
     public static void tearDown() {
@@ -91,7 +87,16 @@ public class TestModule {
 
         Assertions.assertFalse(resultList.isEmpty());
     }
+    @Test
+    public void testGet1() {
+        System.out.println("Running testGet...");
 
+        Integer id = 7;
+
+        Person product = session.find(Person.class, id);
+
+        assertEquals("Алекс", product.getName());
+    }
     @Test
     public void testDelete() {
         System.out.println("Running testDelete...");

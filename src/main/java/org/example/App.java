@@ -35,13 +35,13 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
-        /*
+/*
         org.hibernate.cfg.Configuration configuration = new Configuration().addAnnotatedClass(Person.class);
         SessionFactory sessionFactory = configuration.buildSessionFactory();
         Session session = sessionFactory.getCurrentSession();
         try {
             session.beginTransaction();
-            Person person = new Person("Алекс" , "Иванов", "ivanov123@mail.ru", "12345" , "79512344848");
+            Person person = new Person("Алекс" , "Иванов", "ivanov123@mail.ru", "12345" , "79512344848", Person.Sex.Мужчина);
             session.save(person);
 
             session.getTransaction().commit();
