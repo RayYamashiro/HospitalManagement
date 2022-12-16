@@ -30,6 +30,8 @@ public class RegController {
     @FXML
     ToggleGroup humanSex;
 
+    @FXML
+    Button backButton;
     public boolean checkEmail(String email)
     {
 
@@ -52,6 +54,15 @@ public class RegController {
         return false;
     }
 
+    @FXML
+    public void backButtonAction()
+    {
+        backButton.setOnAction(event ->
+        {
+            Stage stage = (Stage) backButton.getScene().getWindow();
+            stage.close();
+        });
+    }
     @FXML
     public void regButtonAction()
     {

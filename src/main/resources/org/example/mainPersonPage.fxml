@@ -8,11 +8,13 @@
     <children>
         <AnchorPane layoutX="-41.0" layoutY="190.0" prefHeight="416.0" prefWidth="941.0" style="-fx-background-color: #eb8473;">
             <children>
-                <Label layoutX="431.0" layoutY="14.0" text="Welcome" textFill="#545050">
+                <Label layoutX="352.0" layoutY="14.0" text="Мы Вас приветствуем" textFill="#545050">
                     <font>
                         <Font size="27.0" />
                     </font>
                 </Label>
+            <Button layoutX="412.0" layoutY="97.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #afeeee;" text="Записаться к врачу" />
+            <Button layoutX="412.0" layoutY="208.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #afeeee;" text="Удалить запись" />
             </children>
         </AnchorPane>
         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="325.0" layoutY="71.0" prefHeight="72.0" prefWidth="250.0" text="HospitalManager" textFill="#bf5454">
